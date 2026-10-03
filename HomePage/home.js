@@ -7,13 +7,13 @@ login.addEventListener("click",function() {
     window.location.href="../LoginPage/login.html";
 });
 signup.addEventListener("click",function() {
-    window.location.href="../SIGNUPPAGE/signup.html";
+    window.location.href="../SignupPage/signup.html";
 });
 getstarted.addEventListener("click",function() {
-    window.location.href="../COMPANIESPAGE/companies.html";
+    window.location.href="../CompaniesPage/companies.html";
 });
 learnmore.addEventListener("click",function() {
-   window.location.href="../ABOUTPAGE/about.html";
+   window.location.href="../AboutPage/about.html";
 });
 
 
