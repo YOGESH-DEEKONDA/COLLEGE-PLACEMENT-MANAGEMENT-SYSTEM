@@ -8,12 +8,12 @@ let btn=document.querySelector(".send-btn");
 
 
 login.addEventListener("click",function() {
-    window.location.href="../LOGINPAGE/login.html";
+    window.location.href="../LoginPage/login.html";
 }); 
 
 
 signup.addEventListener("click",function() {
-    window.location.href="../SIGNUPPAGE/signup.html";
+    window.location.href="../SignupPage/signup.html";
 });
 
 btn.addEventListener("click",function() {
