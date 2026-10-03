@@ -310,7 +310,7 @@ aboutHeadquarters.textContent = "Seattle, USA";
 }
 
 back.addEventListener("click",function() {
-    window.location.href="../COMPANIESPAGE/companies.html";
+    window.location.href="../CompaniesPage/companies.html";
 });
 
 let applied=false;
