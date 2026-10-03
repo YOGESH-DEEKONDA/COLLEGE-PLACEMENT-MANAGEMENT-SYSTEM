@@ -80,7 +80,7 @@ for(let i = 0; i < viewdetails.length; i++) {
 
         localStorage.setItem("selectedCompany", company);
 
-        window.location.href = "../COMPANYDETAILSPAGE/company.html";
+        window.location.href = "../CompanyDetailsPage/company.html";
 
     });
 
