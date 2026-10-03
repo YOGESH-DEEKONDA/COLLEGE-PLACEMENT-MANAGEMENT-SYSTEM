@@ -3,12 +3,12 @@ let signup=document.querySelector("#signup");
 
 
 login.addEventListener("click",function() {
-    window.location.href="../LOGINPAGE/login.html";
+    window.location.href="../LoginPage/login.html";
 });
 
 
 signup.addEventListener("click",function() {
-    window.location.href="../SIGNUPPAGE/signup.html";
+    window.location.href="../SignupPage/signup.html";
 });
 
 
