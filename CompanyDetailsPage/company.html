@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Company Details</title>
+        <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css"
+      integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="company.css">
+</head>
+
+<body>
+
+    <div class="page">
+
+        <!-- Top Title -->
+        <h1 class="page-title">Company Details Page</h1>
+
+
+        <!-- Main Website -->
+        <div class="website-container">
+
+            <!-- Navbar -->
+            <header class="navbar">
+
+                <div class="logo">
+                           <i class="fa-solid fa-briefcase" id="icon1"></i>
+                    <span>PlacementHub</span>
+                </div>
+
+                <nav>
+                    <a href="../HOMEPAGE/home.html" target="_main">Home</a>
+                    <a href="../COMPANIESPAGE/companies.html" target="_main">Companies</a>
+                    <a href="#">My Applications</a>
+                </nav>
+
+                <div class="nav-right">
+                    <span class="search">⌕</span>
+                    <span class="profile">●</span>
+                </div>
+
+            </header>
+
+
+            <!-- Back -->
+            <div class="back">
+                ← Back to Companies
+            </div>
+
+
+            <!-- Company Header -->
+            <section class="company-header">
+
+                <div class="company-info" >
+
+                    <div class="company-logo" id="company-logo">
+                        
+                    </div>
+
+
+               <div class="company-name">
+
+                    <h2 id="company-name">Microsoft</h2>
+
+                    <p id="company-role">Software Engineer &nbsp; • &nbsp; ₹10 - 18 LPA</p>
+
+                    <p id="company-location">📍 Hyderabad, Telangana</p>
+
+                    <p id="company-website">🌐 www.microsoft.com</p>
+
+                </div>
+
+                </div>
+
+
+                <button class="apply-btn">
+                    Apply Now
+                </button>
+
+            </section>
+
+
+            <!-- Tabs -->
+            <div class="tabs">
+
+                <button class="tab" data-tab="overview" >
+                    Overview
+                </button>
+
+                <button class="tab" data-tab="jobopenings" >
+                    Job Openings
+                </button>
+
+                <button class="tab" data-tab="eligibility">
+                    Eligibility
+                </button>
+
+                <button class="tab"  data-tab="about" >
+                    About
+                </button>
+
+            </div>
+
+      <!-- Overview -->
+<section id="overview" class="tab-content">
+
+    <h3 id="overview-title">About Microsoft</h3>
+
+<p id="overview-description">
+    Microsoft is a global technology company that develops
+    software, services and devices. It focuses on creating
+    tools and technologies that improve productivity and
+    help people around the world.
+</p>
+
+    <div class="company-stats">
+
+        <div class="stat">
+            <div class="stat-icon">◉</div>
+
+            <div>
+                <span>Founded</span>
+                <strong id="founded">1975</strong>
+            </div>
+        </div>
+
+        <div class="stat">
+            <div class="stat-icon">♙</div>
+
+            <div>
+                <span>Employees</span>
+                <strong id="employees">220,000+</strong>
+            </div>
+        </div>
+
+        <div class="stat">
+            <div class="stat-icon">⌂</div>
+
+            <div>
+                <span>Headquarters</span>
+                <strong id="headquarters">Redmond, USA</strong>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+
+<!-- Eligibility -->
+<section id="eligibility" class="tab-content">
+
+    <h3>Eligibility</h3>
+
+    <div class="eligibility-list">
+
+        <div class="eligibility-item">
+            <span>Degree</span>
+            <strong id="degree">B.Tech / B.E.</strong>
+        </div>
+
+        <div class="eligibility-item">
+            <span>Branch</span>
+            <strong id="branch">CSE / IT / ECE</strong>
+        </div>
+
+        <div class="eligibility-item">
+            <span>Minimum CGPA</span>
+            <strong id="minimum-cgpa">7.0</strong>
+        </div>
+
+        <div class="eligibility-item">
+            <span>Backlogs</span>
+            <strong id="backlogs">No active backlogs</strong>
+        </div>
+
+        <div class="eligibility-item">
+            <span>Graduation</span>
+            <strong id="graduation">2026 - 2029</strong>
+        </div>
+
+    </div>
+
+</section>
+
+<section id="jobopenings" class="tab-content">
+
+    <h3 id="jobopenings-title">Job Openings</h3>
+
+    <div id="jobopenings-content">
+
+    </div>
+
+</section>
+<!-- About -->
+<section id="about" class="tab-content">
+   <h3>About the Company</h3>
+   <p id="about-description">
+    Microsoft develops technology products and services used
+    by individuals, businesses and organizations around the
+    world.
+</p>
+
+<p id="about-description2">
+    The company works across areas including cloud computing,
+    software, artificial intelligence, productivity tools and
+    other technology services.
+</p>
+
+    <div class="about-info">
+
+        <div>
+            <span>Industry</span>
+            <strong id="industry">Technology</strong>
+        </div>
+
+        <div>
+            <span>Company Type</span>
+            <strong id="company-type">Public</strong>
+        </div>
+
+        <div>
+            <span>Headquarters</span>
+            <strong id="about-headquarters">Redmond, USA</strong>
+        </div>
+
+    </div>
+
+</section>
+
+
+            <!-- Bottom section -->
+            <section class="extra-section">
+
+                <h3>Placement Opportunities</h3>
+
+                <div class="opportunity-cards">
+
+                    <div class="opportunity-card">
+                        <h4>Software Engineer</h4>
+                        <p>₹10 - 18 LPA</p>
+                    </div>
+
+                    <div class="opportunity-card">
+                        <h4>Software Intern</h4>
+                        <p>₹50K - ₹1L / Month</p>
+                    </div>
+
+                    <div class="opportunity-card">
+                        <h4>Data Analyst</h4>
+                        <p>₹8 - 14 LPA</p>
+                    </div>
+
+                </div>
+
+            </section>
+
+        </div>
+
+    </div>
+  <script src="company.js"></script>
+</body>
+</html>

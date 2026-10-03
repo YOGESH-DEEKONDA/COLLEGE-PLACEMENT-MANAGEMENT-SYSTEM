@@ -1,0 +1,257 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #eef3f9;
+    color: #1d2b44;
+}
+
+.page {
+    width: 100%;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.page-title {
+    font-size: 25px;
+    color: #202b3c;
+    margin-bottom: 18px;
+}
+
+.about-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.08);
+}
+
+
+/* Navbar */
+
+.navbar {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+    border-bottom: 1px solid #e5eaf1;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    font-weight: 700;
+    color: #263957;
+}
+
+#icon1 {
+    background: #1769e0;
+    color: white;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+    margin-left: 55px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #59677b;
+    font-size: 13px;
+}
+
+.nav-links a:hover,
+.nav-links .active {
+    color: #1769e0;
+}
+
+.nav-buttons {
+    margin-left: auto;
+    display: flex;
+    gap: 10px;
+}
+
+.nav-buttons button {
+    height: 35px;
+    width: 80px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#login {
+    background: white;
+    color: #1769e0;
+    border: 1px solid #1769e0;
+}
+
+#signup {
+    background: #1769e0;
+    color: white;
+    border: none;
+}
+
+
+/* Hero */
+
+.about-hero {
+    min-height: 220px;
+    background: linear-gradient(
+        135deg,
+        #1769e0,
+        #4389ed
+    );
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 40px;
+}
+
+.about-hero-text {
+    max-width: 650px;
+}
+
+.about-hero h1 {
+    color: white;
+    font-size: 38px;
+    margin-bottom: 15px;
+}
+
+.about-hero p {
+    color: #eaf2ff;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+
+/* About cards */
+
+.about-content {
+    display: flex;
+    gap: 20px;
+    padding: 35px;
+}
+
+.about-box {
+    flex: 1;
+    padding: 25px;
+    text-align: center;
+    border: 1px solid #e5eaf1;
+    border-radius: 8px;
+    background: #ffffff;
+}
+
+.about-box > i {
+    font-size: 25px;
+    color: #1769e0;
+    margin-bottom: 15px;
+}
+
+.about-box h2 {
+    font-size: 18px;
+    margin-bottom: 12px;
+}
+
+.about-box p {
+    font-size: 13px;
+    color: #6c788b;
+    line-height: 1.6;
+}
+
+
+/* Why section */
+
+.why-section {
+    background: #f7faff;
+    padding: 35px;
+}
+
+.why-section > h2 {
+    text-align: center;
+    font-size: 23px;
+    margin-bottom: 25px;
+}
+
+.features {
+    display: flex;
+    gap: 25px;
+}
+
+.feature {
+    flex: 1;
+    display: flex;
+    gap: 15px;
+}
+
+.feature > i {
+    color: #1769e0;
+    font-size: 20px;
+    margin-top: 3px;
+}
+
+.feature h3 {
+    font-size: 15px;
+    margin-bottom: 7px;
+}
+
+.feature p {
+    font-size: 12px;
+    color: #727e90;
+    line-height: 1.5;
+}
+
+
+/* Responsive */
+
+@media (max-width: 800px) {
+
+    .nav-links {
+        display: none;
+    }
+
+    .about-content {
+        flex-direction: column;
+    }
+
+    .features {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 500px) {
+
+    .page {
+        padding: 10px;
+    }
+
+    .navbar {
+        padding: 0 15px;
+    }
+
+    .nav-buttons {
+        gap: 5px;
+    }
+
+    .about-hero h1 {
+        font-size: 28px;
+    }
+
+    .about-content {
+        padding: 20px;
+    }
+}

@@ -1,0 +1,542 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #eef3f9;
+    color: #1d2b44;
+}
+
+
+/* Main Page */
+
+.page {
+    width: 100%;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+
+/* Page Title */
+
+.page-title {
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 18px;
+    color: #202b3c;
+}
+
+
+/* Main Container */
+
+.login-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+
+    background: white;
+
+    border-radius: 10px;
+
+    overflow: hidden;
+
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.08);
+}
+
+
+/* Navbar */
+
+.navbar {
+    height: 70px;
+
+    display: flex;
+    align-items: center;
+
+    padding: 0 30px;
+
+    border-bottom: 1px solid #e8edf5;
+}
+
+
+/* Logo */
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    font-size: 16px;
+    font-weight: 700;
+
+}
+#icon1 {
+
+    background-color: blue;
+
+    color: white;
+
+    height: 30px;
+
+    width: 30px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 6px;
+
+    margin: 0;
+
+    padding: 0;
+
+    font-size: 15px;
+}
+
+
+/* Main Content */
+
+.login-content {
+    min-height: 570px;
+
+    display: flex;
+}
+
+
+/* Left Section */
+
+.welcome-section {
+    width: 50%;
+
+    background: linear-gradient(
+        135deg,
+        #f4f8ff,
+        #edf4ff
+    );
+
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: space-between;
+
+    padding: 70px 60px 30px;
+}
+
+
+/* Welcome Text */
+
+.welcome-text {
+    max-width: 350px;
+}
+
+
+.welcome-text h2 {
+    font-size: 30px;
+
+    color: #253856;
+
+    margin-bottom: 15px;
+}
+
+
+.welcome-text p {
+    font-size: 15px;
+
+    line-height: 1.6;
+
+    color: #65738a;
+}
+
+
+/* Illustration */
+
+.illustration {
+    height: 220px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: flex-end;
+
+    gap: 25px;
+}
+
+
+/* Plants */
+
+.plant {
+    font-size: 50px;
+
+    margin-bottom: 25px;
+}
+
+
+/* Laptop */
+
+.laptop {
+    width: 190px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+}
+
+
+.screen {
+    width: 155px;
+    height: 105px;
+
+    background: #1769e0;
+
+    border-radius: 7px 7px 3px 3px;
+
+    position: relative;
+
+    box-shadow: 0 5px 15px rgba(23, 105, 224, 0.25);
+}
+
+
+.screen::after {
+    content: "";
+
+    position: absolute;
+
+    width: 55px;
+    height: 55px;
+
+    background: #2d7aee;
+
+    border-radius: 50%;
+
+    top: 25px;
+    left: 50px;
+}
+
+
+.keyboard {
+    width: 190px;
+    height: 12px;
+
+    background: #294f91;
+
+    border-radius: 0 0 10px 10px;
+}
+
+
+/* Right Section */
+
+.form-section {
+    width: 50%;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    padding: 40px;
+}
+
+
+/* Form */
+
+.form-box {
+    width: 100%;
+    max-width: 390px;
+}
+
+
+.form-box h2 {
+    font-size: 24px;
+
+    color: #17253c;
+
+    margin-bottom: 5px;
+}
+
+
+.form-description {
+    font-size: 12px;
+
+    color: #8994a6;
+
+    margin-bottom: 25px;
+}
+
+
+/* Labels */
+
+label {
+    display: block;
+
+    font-size: 12px;
+
+    font-weight: 600;
+
+    color: #46546b;
+
+    margin-bottom: 7px;
+}
+
+
+/* Input */
+
+.input-box {
+    height: 42px;
+
+    width: 100%;
+
+    border: 1px solid #dce3ed;
+
+    border-radius: 5px;
+
+    display: flex;
+
+    align-items: center;
+
+    margin-bottom: 17px;
+
+    background: white;
+}
+
+
+.input-box:focus-within {
+    border-color: #1769e0;
+
+    box-shadow: 0 0 0 2px rgba(23, 105, 224, 0.08);
+}
+
+
+.input-box input,
+.input-box select {
+    width: 100%;
+
+    height: 100%;
+
+    border: none;
+
+    outline: none;
+
+    padding: 0 12px;
+
+    font-size: 12px;
+
+    color: #34445c;
+
+    background: transparent;
+}
+
+
+.input-box input::placeholder {
+    color: #a5adba;
+}
+
+
+/* Select */
+
+.input-box select {
+    appearance: none;
+
+    cursor: pointer;
+
+    padding-left: 5px;
+}
+
+
+.input-icon {
+    font-size: 13px;
+
+    padding-left: 12px;
+}
+
+
+.arrow {
+    padding-right: 12px;
+
+    color: #8894a7;
+}
+
+
+/* Password Eye */
+
+.eye {
+    padding-right: 12px;
+
+    color: #8c98a9;
+
+    font-size: 13px;
+}
+
+
+/* Forgot Password */
+
+.forgot {
+    text-align: right;
+
+    margin-top: -7px;
+
+    margin-bottom: 18px;
+}
+
+
+.forgot a {
+    text-decoration: none;
+
+    color: #1769e0;
+
+    font-size: 11px;
+}
+
+
+.forgot a:hover {
+    text-decoration: underline;
+}
+
+
+/* Login Button */
+
+.login-btn {
+    width: 100%;
+
+    height: 42px;
+
+    border: none;
+
+    border-radius: 5px;
+
+    background: #1769e0;
+
+    color: white;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+
+.login-btn:hover {
+    background: #0d58c5;
+}
+
+
+.login-btn:active {
+    transform: scale(0.99);
+}
+
+
+/* Signup */
+
+.signup-text {
+    text-align: center;
+
+    font-size: 11px;
+
+    color: #7c8798;
+
+    margin-top: 18px;
+}
+
+
+.signup-text a {
+    color: #1769e0;
+
+    font-weight: 600;
+
+    text-decoration: none;
+}
+
+
+.signup-text a:hover {
+    text-decoration: underline;
+}
+
+
+/* Responsive */
+
+@media (max-width: 800px) {
+
+    .page {
+        padding: 10px;
+    }
+
+    .login-content {
+        flex-direction: column;
+    }
+
+    .welcome-section,
+    .form-section {
+        width: 100%;
+    }
+
+    .welcome-section {
+        min-height: 350px;
+
+        padding: 40px 30px 20px;
+    }
+
+    .welcome-text h2 {
+        font-size: 25px;
+    }
+
+    .illustration {
+        height: 150px;
+    }
+
+    .form-section {
+        padding: 35px 25px;
+    }
+
+}
+
+
+@media (max-width: 450px) {
+
+    .page-title {
+        font-size: 20px;
+    }
+
+    .navbar {
+        height: 55px;
+
+        padding: 0 18px;
+    }
+
+    .welcome-section {
+        padding: 30px 20px 15px;
+    }
+
+    .welcome-text h2 {
+        font-size: 23px;
+    }
+
+    .plant {
+        font-size: 35px;
+    }
+
+    .screen {
+        width: 120px;
+        height: 80px;
+    }
+
+    .keyboard {
+        width: 150px;
+    }
+
+    .form-section {
+        padding: 30px 18px;
+    }
+
+}

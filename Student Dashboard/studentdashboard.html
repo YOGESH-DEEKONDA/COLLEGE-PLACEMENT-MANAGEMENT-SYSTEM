@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Dashboard</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css"
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer">
+
+    <link rel="stylesheet" href="studentdashboard.css">
+</head>
+
+<body>
+
+    <div class="page">
+
+        <!-- Page Title -->
+        <h1 class="page-title">Student Dashboard</h1>
+
+
+        <div class="dashboard-container">
+
+            <!-- ================= NAVBAR ================= -->
+
+            <header class="navbar">
+
+                <div class="logo">
+
+                    <i class="fa-solid fa-briefcase" id="icon1"></i>
+
+                    <span>PlacementHub</span>
+
+                </div>
+
+
+                <button class="menu-btn">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+
+
+                <div class="profile">
+
+                    <i class="fa-solid fa-user"></i>
+
+                    <span>Hi, Abhishek</span>
+
+                    <i class="fa-solid fa-chevron-down"></i>
+
+                </div>
+
+            </header>
+
+
+            <!-- ================= MAIN DASHBOARD ================= -->
+
+            <div class="dashboard-content">
+
+
+                <!-- ================= SIDEBAR ================= -->
+
+                <aside class="sidebar">
+
+                    <a href="#" class="side-link active">
+
+                        <i class="fa-solid fa-gauge"></i>
+
+                        <span>Dashboard</span>
+
+                    </a>
+
+
+                    <a href="#" class="side-link">
+
+                        <i class="fa-solid fa-building"></i>
+
+                        <span>Browse Companies</span>
+
+                    </a>
+
+
+                    <a href="#" class="side-link">
+
+                        <i class="fa-solid fa-file-lines"></i>
+
+                        <span>My Applications</span>
+
+                    </a>
+
+
+                    <a href="#" class="side-link">
+
+                        <i class="fa-solid fa-calendar-days"></i>
+
+                        <span>Interview Rounds</span>
+
+                    </a>
+
+
+                    <a href="#" class="side-link">
+
+                        <i class="fa-solid fa-user"></i>
+
+                        <span>My Profile</span>
+
+                    </a>
+
+
+                    <a href="#" class="side-link logout">
+
+                        <i class="fa-solid fa-arrow-right-from-bracket"></i>
+
+                        <span>Logout</span>
+
+                    </a>
+
+                </aside>
+
+
+                <!-- ================= CONTENT ================= -->
+
+                <main class="main-content">
+
+
+                    <!-- Welcome -->
+
+                    <div class="welcome">
+
+                        <h2>
+                            Welcome back, Abhishek 👋
+                        </h2>
+
+                        <p>
+                            Here's what's happening with your placements
+                        </p>
+
+                    </div>
+
+
+                    <!-- ================= STAT CARDS ================= -->
+
+                    <div class="stats">
+
+
+                        <!-- Applied -->
+
+                        <div class="stat-card">
+
+                            <div class="stat-icon blue">
+
+                                <i class="fa-solid fa-user"></i>
+
+                            </div>
+
+                            <div>
+
+                                <p>Applied</p>
+
+                                <h3>5</h3>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- Shortlisted -->
+
+                        <div class="stat-card">
+
+                            <div class="stat-icon green">
+
+                                <i class="fa-solid fa-user-check"></i>
+
+                            </div>
+
+                            <div>
+
+                                <p>Shortlisted</p>
+
+                                <h3>2</h3>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- Interviews -->
+
+                        <div class="stat-card">
+
+                            <div class="stat-icon yellow">
+
+                                <i class="fa-solid fa-user-tie"></i>
+
+                            </div>
+
+                            <div>
+
+                                <p>Interviews</p>
+
+                                <h3>1</h3>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- Placed -->
+
+                        <div class="stat-card">
+
+                            <div class="stat-icon purple">
+
+                                <i class="fa-solid fa-trophy"></i>
+
+                            </div>
+
+                            <div>
+
+                                <p>Placed</p>
+
+                                <h3>0</h3>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- ================= UPCOMING INTERVIEWS ================= -->
+
+                    <div class="interview-section">
+
+
+                        <div class="section-header">
+
+                            <h2>Upcoming Interviews</h2>
+
+                            <a href="#">View All</a>
+
+                        </div>
+
+
+                        <div class="table-container">
+
+                            <table>
+
+                                <thead>
+
+                                    <tr>
+
+                                        <th>Company</th>
+
+                                        <th>Position</th>
+
+                                        <th>Date</th>
+
+                                        <th>Mode</th>
+
+                                    </tr>
+
+                                </thead>
+
+
+                                <tbody>
+
+                                    <tr>
+
+                                        <td>
+
+                                            <div class="company">
+
+                                                <div class="company-icon">
+                                                    TC
+                                                </div>
+
+                                                <span>TCS</span>
+
+                                            </div>
+
+                                        </td>
+
+
+                                        <td>
+                                            Software Developer
+                                        </td>
+
+
+                                        <td>
+                                            25 Apr 2025
+                                        </td>
+
+
+                                        <td>
+
+                                            <span class="online">
+                                                Online
+                                            </span>
+
+                                        </td>
+
+                                    </tr>
+
+                                </tbody>
+
+                            </table>
+
+                        </div>
+
+                    </div>
+
+
+                </main>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>

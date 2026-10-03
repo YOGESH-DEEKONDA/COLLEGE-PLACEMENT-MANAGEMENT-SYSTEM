@@ -1,0 +1,706 @@
+/* =========================
+   RESET
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+
+    background: #eef3f9;
+
+    color: #1d2b44;
+}
+
+
+/* =========================
+   PAGE
+========================= */
+
+.page {
+
+    width: 100%;
+
+    min-height: 100vh;
+
+    padding: 20px;
+}
+
+
+.page-title {
+
+    font-size: 25px;
+
+    font-weight: 700;
+
+    color: #202b3c;
+
+    margin-bottom: 18px;
+}
+
+
+/* =========================
+   DASHBOARD CONTAINER
+========================= */
+
+.dashboard-container {
+
+    width: 100%;
+
+    max-width: 1200px;
+
+    margin: auto;
+
+    background: white;
+
+    border-radius: 10px;
+
+    overflow: hidden;
+
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.08);
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+
+    height: 65px;
+
+    display: flex;
+
+    align-items: center;
+
+    padding: 0 25px;
+
+    border-bottom: 1px solid #e5eaf1;
+
+    background: white;
+}
+
+
+/* =========================
+   LOGO
+========================= */
+
+.logo {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    color: #263957;
+}
+
+
+#icon1 {
+
+    background: #1769e0;
+
+    color: white;
+
+    width: 27px;
+
+    height: 27px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 6px;
+
+    font-size: 12px;
+}
+
+
+/* =========================
+   MENU BUTTON
+========================= */
+
+.menu-btn {
+
+    margin-left: 25px;
+
+    border: none;
+
+    background: transparent;
+
+    color: #66758a;
+
+    cursor: pointer;
+
+    font-size: 14px;
+}
+
+
+/* =========================
+   PROFILE
+========================= */
+
+.profile {
+
+    margin-left: auto;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    font-size: 11px;
+
+    font-weight: 600;
+
+    color: #35445b;
+}
+
+
+.profile > i:first-child {
+
+    width: 27px;
+
+    height: 27px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #e9edf5;
+
+    color: #17253c;
+}
+
+
+.profile .fa-chevron-down {
+
+    font-size: 8px;
+
+    color: #8994a6;
+}
+
+
+/* =========================
+   DASHBOARD CONTENT
+========================= */
+
+.dashboard-content {
+
+    display: flex;
+
+    min-height: 550px;
+}
+
+
+/* =========================
+   SIDEBAR
+========================= */
+
+.sidebar {
+
+    width: 205px;
+
+    border-right: 1px solid #e5eaf1;
+
+    background: #fbfcfe;
+
+    padding: 12px 10px;
+}
+
+
+.side-link {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    height: 38px;
+
+    padding: 0 10px;
+
+    margin-bottom: 3px;
+
+    border-radius: 5px;
+
+    text-decoration: none;
+
+    color: #3f4e64;
+
+    font-size: 11px;
+
+    transition: 0.2s;
+}
+
+
+.side-link i {
+
+    width: 14px;
+
+    text-align: center;
+
+    font-size: 11px;
+}
+
+
+.side-link:hover {
+
+    background: #edf4ff;
+
+    color: #1769e0;
+}
+
+
+/* Active sidebar item */
+
+.side-link.active {
+
+    background: #e9f1ff;
+
+    color: #1769e0;
+
+    font-weight: 600;
+}
+
+
+/* Logout */
+
+.logout {
+
+    margin-top: 12px;
+}
+
+
+/* =========================
+   MAIN CONTENT
+========================= */
+
+.main-content {
+
+    flex: 1;
+
+    padding: 28px 25px;
+
+    background: white;
+}
+
+
+/* =========================
+   WELCOME
+========================= */
+
+.welcome h2 {
+
+    font-size: 17px;
+
+    color: #1d2b44;
+
+    margin-bottom: 6px;
+}
+
+
+.welcome p {
+
+    font-size: 11px;
+
+    color: #7d899a;
+}
+
+
+/* =========================
+   STATISTICS
+========================= */
+
+.stats {
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 14px;
+
+    margin-top: 22px;
+
+    margin-bottom: 30px;
+}
+
+
+/* Stat card */
+
+.stat-card {
+
+    min-height: 75px;
+
+    background: white;
+
+    border: 1px solid #edf0f5;
+
+    border-radius: 5px;
+
+    box-shadow: 0 3px 12px rgba(40, 60, 90, 0.06);
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    padding: 12px;
+}
+
+
+/* Stat icon */
+
+.stat-icon {
+
+    width: 27px;
+
+    height: 27px;
+
+    border-radius: 5px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 11px;
+}
+
+
+/* Icon colors */
+
+.blue {
+
+    background: #dce9ff;
+
+    color: #1769e0;
+}
+
+
+.green {
+
+    background: #d9f4e8;
+
+    color: #25a56a;
+}
+
+
+.yellow {
+
+    background: #fff0c9;
+
+    color: #d69b00;
+}
+
+
+.purple {
+
+    background: #eadcff;
+
+    color: #7828d8;
+}
+
+
+/* Stat text */
+
+.stat-card p {
+
+    font-size: 10px;
+
+    color: #7d899a;
+
+    margin-bottom: 4px;
+}
+
+
+.stat-card h3 {
+
+    font-size: 16px;
+
+    color: #26364e;
+}
+
+
+/* =========================
+   INTERVIEW SECTION
+========================= */
+
+.interview-section {
+
+    margin-top: 10px;
+}
+
+
+.section-header {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    margin-bottom: 12px;
+}
+
+
+.section-header h2 {
+
+    font-size: 14px;
+
+    color: #26364e;
+}
+
+
+.section-header a {
+
+    font-size: 10px;
+
+    color: #1769e0;
+
+    text-decoration: none;
+}
+
+
+.section-header a:hover {
+
+    text-decoration: underline;
+}
+
+
+/* =========================
+   TABLE
+========================= */
+
+.table-container {
+
+    width: 100%;
+
+    border: 1px solid #edf0f4;
+
+    border-radius: 5px;
+
+    overflow: hidden;
+}
+
+
+table {
+
+    width: 100%;
+
+    border-collapse: collapse;
+
+    font-size: 10px;
+}
+
+
+thead {
+
+    background: #f7f9fc;
+}
+
+
+th {
+
+    text-align: left;
+
+    padding: 11px 10px;
+
+    color: #647186;
+
+    font-size: 9px;
+
+    font-weight: 600;
+}
+
+
+td {
+
+    padding: 12px 10px;
+
+    border-top: 1px solid #edf0f4;
+
+    color: #4b586c;
+}
+
+
+/* =========================
+   COMPANY
+========================= */
+
+.company {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    font-weight: 600;
+
+    color: #36455b;
+}
+
+
+.company-icon {
+
+    width: 25px;
+
+    height: 25px;
+
+    border-radius: 5px;
+
+    background: #172c68;
+
+    color: white;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 9px;
+
+    font-weight: 700;
+}
+
+
+/* =========================
+   ONLINE BADGE
+========================= */
+
+.online {
+
+    background: #dff5e8;
+
+    color: #278653;
+
+    padding: 4px 8px;
+
+    border-radius: 10px;
+
+    font-size: 8px;
+
+    font-weight: 600;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+
+    .stats {
+
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    .sidebar {
+
+        width: 180px;
+    }
+
+}
+
+
+@media (max-width: 700px) {
+
+    .page {
+
+        padding: 10px;
+    }
+
+
+    .dashboard-content {
+
+        flex-direction: column;
+    }
+
+
+    .sidebar {
+
+        width: 100%;
+
+        display: flex;
+
+        overflow-x: auto;
+
+        border-right: none;
+
+        border-bottom: 1px solid #e5eaf1;
+
+        padding: 8px;
+    }
+
+
+    .side-link {
+
+        min-width: max-content;
+
+        margin: 0 3px;
+    }
+
+
+    .logout {
+
+        margin-top: 0;
+    }
+
+
+    .main-content {
+
+        padding: 20px 15px;
+    }
+
+}
+
+
+@media (max-width: 500px) {
+
+    .stats {
+
+        grid-template-columns: 1fr;
+    }
+
+
+    .profile span {
+
+        display: none;
+    }
+
+
+    .table-container {
+
+        overflow-x: auto;
+    }
+
+
+    table {
+
+        min-width: 500px;
+    }
+
+}

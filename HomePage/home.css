@@ -1,0 +1,868 @@
+/* =========================
+   GENERAL
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: sans-serif;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    background-color: rgb(231, 239, 247);
+
+    color: black;
+
+    overflow-x: hidden;
+}
+
+
+/* =========================
+   MAIN PAGE
+========================= */
+
+.page {
+
+    min-height: 100vh;
+
+    width: 100%;
+
+    background-color: rgb(231, 239, 247);
+
+    padding-top: 1px;
+}
+
+
+/* Keep your original header */
+
+header h2 {
+
+    display: inline;
+
+    margin-top: 2vh;
+
+    margin-left: 2vw;
+}
+
+
+/* =========================
+   MAIN CONTENT
+========================= */
+
+.content {
+
+    background-color: white;
+
+    margin-top: 2vh;
+
+    margin-left: 2vw;
+
+    margin-right: 2vw;
+
+    width: 96%;
+
+    border-radius: 8px 8px 0 0;
+
+    overflow: hidden;
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+.nav-bar {
+
+    display: flex;
+
+    align-items: center;
+
+    height: 75px;
+
+    width: 100%;
+
+    background-color: white;
+
+    padding: 0 30px;
+}
+
+
+/* =========================
+   LOGO
+========================= */
+
+.logo {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    min-width: 200px;
+
+    margin-left: 5px;
+}
+
+
+.logo h3 {
+
+    color: rgb(38, 57, 87);
+
+    font-size: 17px;
+
+    padding: 0;
+}
+
+
+/* PlacementHub icon */
+
+#icon1 {
+
+    background-color: blue;
+
+    color: white;
+
+    height: 30px;
+
+    width: 30px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 6px;
+
+    margin: 0;
+
+    padding: 0;
+
+    font-size: 15px;
+}
+
+
+/* =========================
+   NAVIGATION
+========================= */
+
+.nav-ops {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 35px;
+
+    flex: 1;
+}
+
+
+.nav-ops a {
+
+    margin: 0;
+
+    text-decoration: none;
+
+    color: rgb(108, 117, 125);
+
+    font-size: 13px;
+
+    transition: 0.2s;
+}
+
+
+.nav-ops a:hover {
+
+    color: blue;
+}
+
+
+/* =========================
+   LOGIN / SIGNUP BUTTONS
+========================= */
+
+.btns {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: flex-end;
+
+    gap: 10px;
+
+    min-width: 180px;
+
+    margin-left: 10px;
+}
+
+
+#login {
+
+    background-color: white;
+
+    color: blue;
+
+    border: 1px solid blue;
+
+    border-radius: 5px;
+
+    height: 36px;
+
+    width: 80px;
+
+    margin: 0;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+
+#login:hover {
+
+    background-color: #f1f5ff;
+
+    color: rgba(0, 0, 255, 0.7);
+}
+
+
+#signup {
+
+    background-color: rgb(0, 0, 255);
+
+    color: white;
+
+    border-radius: 5px;
+
+    border: none;
+
+    height: 36px;
+
+    width: 80px;
+
+    margin: 0;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+
+#signup:hover {
+
+    background-color: rgb(0, 0, 200);
+}
+
+
+/* =========================
+   HERO SECTION
+========================= */
+
+.hero-section {
+
+    position: relative;
+
+    height: 570px;
+
+    width: 100%;
+
+    background-image: url("campus_image.jpg");
+
+    background-size: cover;
+
+    background-position: center;
+
+    background-repeat: no-repeat;
+
+    overflow: hidden;
+}
+
+
+/* Dark blue overlay */
+
+.hero-section::before {
+
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    background: rgba(5, 35, 85, 0.65);
+
+    z-index: 0;
+}
+
+
+/* =========================
+   HERO TEXT
+========================= */
+
+.herotxt {
+
+    position: relative;
+
+    z-index: 1;
+
+    display: flex;
+
+    flex-direction: column;
+
+    height: auto;
+
+    width: 60%;
+
+    padding-top: 115px;
+
+    padding-left: 55px;
+}
+
+
+/* First heading */
+
+#herotxt1 {
+
+    color: white;
+
+    font-size: clamp(40px, 4vw, 60px);
+
+    line-height: 1.05;
+
+    font-weight: 700;
+
+    margin: 0;
+}
+
+
+/* Second heading */
+
+#herotxt2 {
+
+    color: white;
+
+    font-size: clamp(40px, 4.3vw, 67px);
+
+    line-height: 1.05;
+
+    font-weight: 700;
+
+    margin: 0 0 22px 0;
+}
+
+
+/* Description */
+
+#herotxt3 {
+
+    color: white;
+
+    font-size: clamp(14px, 1.4vw, 20px);
+
+    line-height: 1.5;
+
+    margin: 0;
+
+    font-weight: 400;
+}
+
+
+/* =========================
+   HERO BUTTONS
+========================= */
+
+.hero-btns {
+
+    display: flex;
+
+    flex-direction: row;
+
+    gap: 18px;
+
+    padding-top: 30px;
+
+    height: auto;
+
+    width: 370px;
+}
+
+
+#herobtn1 {
+
+    color: white;
+
+    background-color: rgb(0, 0, 255);
+
+    border: none;
+
+    border-radius: 6px;
+
+    width: 170px;
+
+    height: 48px;
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+
+#herobtn1:hover {
+
+    background-color: rgb(0, 0, 205);
+}
+
+
+#herobtn2 {
+
+    color: white;
+
+    background-color: rgba(255, 255, 255, 0.05);
+
+    border: 2px solid rgba(180, 170, 255, 0.8);
+
+    border-radius: 6px;
+
+    width: 170px;
+
+    height: 48px;
+
+    margin-left: 0;
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+
+#herobtn2:hover {
+
+    background-color: rgba(255, 255, 255, 0.15);
+
+    color: white;
+}
+
+
+/* =========================
+   FEATURES / FOOTER
+========================= */
+
+.foot {
+
+    width: 96%;
+
+    margin-left: 2%;
+
+    min-height: 150px;
+
+    background-color: white;
+
+    border-radius: 0 0 8px 8px;
+
+    padding: 25px 20px;
+
+    margin-bottom: 30px;
+}
+
+
+.foottext {
+
+    width: 100%;
+
+    min-height: 120px;
+
+    background-color: white;
+
+    display: flex;
+
+    flex-direction: row;
+
+    align-items: stretch;
+}
+
+
+/* =========================
+   COMMON FEATURE STYLE
+========================= */
+
+.foottext1,
+.foottext2,
+.foottext3,
+.foottext4 {
+
+    display: flex;
+
+    flex-direction: row;
+
+    align-items: flex-start;
+
+    width: 25%;
+
+    min-height: 100px;
+
+    background-color: white;
+
+    padding: 15px 25px;
+
+    border-radius: 6px;
+
+    transition: 0.2s;
+
+    cursor: pointer;
+}
+
+
+.foottext1:hover,
+.foottext2:hover,
+.foottext3:hover,
+.foottext4:hover {
+
+    background-color: #f7faff;
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================
+   FEATURE ICONS
+========================= */
+
+.foottext1 > i,
+.foottext2 > i,
+.foottext3 > i,
+.foottext4 > i {
+
+    background-color: rgb(181, 199, 235);
+
+    color: blue;
+
+    height: 32px;
+
+    width: 32px;
+
+    min-width: 32px;
+
+    margin: 4px 12px 0 0;
+
+    padding: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 50%;
+
+    font-size: 13px;
+}
+
+
+/* =========================
+   FEATURE TEXT
+========================= */
+
+.foottext1 h3,
+.foottext2 h3,
+.foottext3 h3,
+.foottext4 h3 {
+
+    display: block;
+
+    padding: 0;
+
+    color: rgb(38, 57, 87);
+
+    font-size: 14px;
+
+    line-height: 1.25;
+
+    margin-bottom: 7px;
+}
+
+
+.footpara {
+
+    margin: 0;
+
+    padding: 0;
+
+    color: rgb(108, 117, 125);
+
+    font-size: 12px;
+
+    line-height: 1.45;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+
+    .nav-bar {
+
+        padding: 0 15px;
+    }
+
+
+    .logo {
+
+        min-width: 160px;
+    }
+
+
+    .nav-ops {
+
+        gap: 18px;
+    }
+
+
+    .nav-ops a {
+
+        font-size: 11px;
+    }
+
+
+    .btns {
+
+        min-width: 165px;
+    }
+
+
+    .herotxt {
+
+        width: 70%;
+
+        padding-left: 35px;
+    }
+
+
+    .foottext1,
+    .foottext2,
+    .foottext3,
+    .foottext4 {
+
+        padding-left: 12px;
+
+        padding-right: 10px;
+    }
+
+}
+
+
+@media (max-width: 700px) {
+
+    .content {
+
+        width: 96%;
+
+        margin-left: 2%;
+
+        margin-right: 2%;
+    }
+
+
+    .nav-bar {
+
+        height: auto;
+
+        min-height: 70px;
+
+        flex-wrap: wrap;
+
+        padding: 12px 15px;
+    }
+
+
+    .logo {
+
+        min-width: auto;
+
+        flex: 1;
+    }
+
+
+    .nav-ops {
+
+        order: 3;
+
+        width: 100%;
+
+        padding: 10px 0;
+
+        gap: 20px;
+    }
+
+
+    .btns {
+
+        min-width: auto;
+
+        margin-left: 5px;
+    }
+
+
+    .hero-section {
+
+        height: 500px;
+    }
+
+
+    .herotxt {
+
+        width: 90%;
+
+        padding-top: 80px;
+
+        padding-left: 25px;
+    }
+
+
+    .hero-btns {
+
+        width: 350px;
+    }
+
+
+    .foot {
+
+        width: 96%;
+
+        margin-left: 2%;
+    }
+
+
+    .foottext {
+
+        display: grid;
+
+        grid-template-columns: 1fr 1fr;
+
+        gap: 5px;
+    }
+
+
+    .foottext1,
+    .foottext2,
+    .foottext3,
+    .foottext4 {
+
+        width: 100%;
+    }
+
+}
+
+
+@media (max-width: 500px) {
+
+    .page {
+
+        width: 100%;
+    }
+
+
+    .nav-ops {
+
+        overflow-x: auto;
+
+        justify-content: flex-start;
+    }
+
+
+    .nav-ops a {
+
+        white-space: nowrap;
+    }
+
+
+    .hero-section {
+
+        height: 520px;
+    }
+
+
+    .herotxt {
+
+        padding-top: 70px;
+
+        padding-left: 20px;
+
+        width: 95%;
+    }
+
+
+    #herotxt1,
+    #herotxt2 {
+
+        font-size: 38px;
+    }
+
+
+    #herotxt3 {
+
+        font-size: 14px;
+    }
+
+
+    #herotxt3 br {
+
+        display: none;
+    }
+
+
+    .hero-btns {
+
+        width: 100%;
+
+        max-width: 330px;
+
+        gap: 10px;
+    }
+
+
+    #herobtn1,
+    #herobtn2 {
+
+        width: 50%;
+
+        font-size: 13px;
+    }
+
+
+    .foottext {
+
+        grid-template-columns: 1fr;
+    }
+
+
+    .foottext1,
+    .foottext2,
+    .foottext3,
+    .foottext4 {
+
+        min-height: 80px;
+    }
+
+}

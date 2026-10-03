@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Login Page</title>
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css"
+      integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+
+    <div class="page">
+        <h1 class="page-title">Login Page</h1>
+        <div class="login-container">
+            <header class="navbar">
+                <div class="logo">
+                   <i class="fa-solid fa-briefcase" id="icon1"></i>
+                    <span>PlacementHub</span>
+                </div>
+            </header>
+            <div class="login-content">
+                <div class="welcome-section">
+                    <div class="welcome-text">
+                        <h2>Welcome Back!</h2>
+                        <p>
+                            Login to your account and continue
+                            your placement journey.
+                        </p>
+                    </div>
+
+                    <div class="illustration">
+
+                        <div class="plant plant-left">
+                            🌿
+                        </div>
+
+                        <div class="laptop">
+                            <div class="screen"></div>
+                            <div class="keyboard"></div>
+                        </div>
+
+                        <div class="plant plant-right">
+                            🌿
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Right Login Form -->
+                <div class="form-section">
+
+                    <div class="form-box">
+
+                        <h2>Login</h2>
+
+                        <p class="form-description">
+                            Enter your details and login to continue
+                        </p>
+
+
+                        <!-- Role -->
+                        <label for="role">Select Role</label>
+
+                        <div class="input-box">
+                            <span class="input-icon">👤</span>
+
+                            <select id="role">  
+                                <option value="">Select Role</option>
+                                <option value="student">Student</option>
+                                <option value="admin">Admin</option>
+                                <option value="company">Company</option>
+                            </select>
+
+                            <span class="arrow">⌄</span>
+                        </div>
+
+
+                        <!-- Email -->
+                        <label for="email">Email / Roll Number</label>
+
+                        <div class="input-box">
+
+                            <input 
+                                type="text"
+                                id="email"
+                                placeholder="Enter your email or roll number"
+                            >
+
+                        </div>
+
+
+                        <!-- Password -->
+                        <label for="password">Password</label>
+
+                        <div class="input-box">
+
+                            <input
+                                type="password"
+                                id="password"
+                                placeholder="Enter your password"
+                            >
+
+                            <span class="eye">◉</span>
+
+                        </div>
+
+
+                        <!-- Forgot Password -->
+                        <div class="forgot">
+
+                            <a id="forgot" href="#">Forgot Password?</a>
+
+                        </div>
+
+
+                        <!-- Login Button -->
+                        <button class="login-btn">
+                            Login
+                        </button>
+
+
+                        <!-- Signup -->
+                        <p class="signup-text">
+
+                            Don't have an account?
+
+                            <a href="../SIGNUPPAGE/signup.html">
+                                Sign Up
+                            </a>
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+   <script src="login.js"></script>
+</body>
+</html>

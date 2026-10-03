@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Companies Page</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css"
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer">
+
+    <link rel="stylesheet" href="companies.css">
+</head>
+
+<body>
+
+    <div class="page">
+
+        <!-- Page Title -->
+        <h1 class="page-title">Companies Page (Browse)</h1>
+
+
+        <!-- Main Container -->
+        <div class="companies-container">
+
+
+            <!-- ================= NAVBAR ================= -->
+
+            <header class="navbar">
+
+                <div class="logo">
+
+                    <i class="fa-solid fa-briefcase" id="icon1"></i>
+
+                    <span>PlacementHub</span>
+
+                </div>
+
+
+                <div class="nav-links">
+
+                    <a href="../HOMEPAGE/home.html" target="_main">Home</a>
+
+                    <a href="../COMPANIESPAGE/companies.html" target="_main">Companies</a>
+
+                    <a href="#">My Applications</a>
+
+                </div>
+
+
+                <div class="profile">
+
+                    <i class="fa-solid fa-user"></i>
+
+                    <span>Hi, Abhishek</span>
+
+                    <i class="fa-solid fa-chevron-down"></i>
+
+                </div>
+
+            </header>
+
+
+            <!-- ================= MAIN CONTENT ================= -->
+
+            <div class="main-content">
+
+
+                <!-- ================= FILTER SIDEBAR ================= -->
+
+                <aside class="filter-section">
+
+                    <div class="filter-heading">
+
+                        <h2>Filters</h2>
+
+                        <a href="#"   id="clear-all">Clear All</a>
+
+                    </div>
+
+
+                    <!-- Job Role -->
+
+                    <label for="jobrole">
+                        Job Role
+                    </label>
+
+                    <select id="jobrole">
+
+                        <option value="">
+                            Select Job Role
+                        </option>
+
+                        <option value="software">
+                            Software Developer
+                        </option>
+
+                        <option value="frontend">
+                            Frontend Developer
+                        </option>
+
+                        <option value="backend">
+                            Backend Developer
+                        </option>
+
+                        <option value="data">
+                            Data Analyst
+                        </option>
+
+                    </select>
+
+
+                    <!-- Location -->
+
+                    <label for="location">
+                        Location
+                    </label>
+
+                    <select id="location">
+
+                        <option value="">
+                            Select Location
+                        </option>
+
+                        <option value="hyderabad">
+                            Hyderabad
+                        </option>
+
+                        <option value="bangalore">
+                            Bangalore
+                        </option>
+
+                        <option value="pune">
+                            Pune
+                        </option>
+
+                        <option value="chennai">
+                            Chennai
+                        </option>
+
+                    </select>
+
+
+                    <!-- Package -->
+
+                    <label for="package">
+                        Package (LPA)
+                    </label>
+
+                    <select id="package">
+
+                        <option value="">
+                            Any
+                        </option>
+
+                        <option value="3">
+                            3+ LPA
+                        </option>
+
+                        <option value="5">
+                            5+ LPA
+                        </option>
+
+                        <option value="8">
+                            8+ LPA
+                        </option>
+
+                        <option value="10">
+                            10+ LPA
+                        </option>
+
+                    </select>
+
+
+                    <!-- Eligibility -->
+
+                    <label for="eligibility">
+                        Eligibility (CGPA)
+                    </label>
+
+                    <select id="eligibility">
+
+                        <option value="">
+                            Any
+                        </option>
+
+                        <option value="6">
+                            6+ CGPA
+                        </option>
+
+                        <option value="7">
+                            7+ CGPA
+                        </option>
+
+                        <option value="8">
+                            8+ CGPA
+                        </option>
+
+                        <option value="9">
+                            9+ CGPA
+                        </option>
+
+                    </select>
+
+
+                    <button class="apply-filter">
+                        Apply Filters
+                    </button>
+
+                </aside>
+
+
+                <!-- ================= COMPANY LIST ================= -->
+
+                <main class="company-section">
+
+
+                    <!-- Search -->
+
+                    <div class="search-box">
+
+                        <i class="fa-solid fa-magnifying-glass"></i>
+
+                        <input
+                            type="text"
+                            placeholder="Search companies..."
+                            id="search"
+                        >
+
+                    </div>
+
+
+                    <!-- ================= COMPANY CARD 1 ================= -->
+
+                    <div class="company-card" data-company="tcs"
+                    data-package="4"  data-eligibility="6"
+                    >
+
+                        <div class="company-logo tcs-logo">
+                            TCS
+                        </div>
+
+
+                        <div class="company-info">
+
+                            <h2>
+                                Tata Consultancy Services
+                            </h2>
+
+                            <p>
+                                Software Developer
+                            </p>
+
+                            <p>
+                                <i class="fa-solid fa-location-dot"></i>
+                                Pune, Telangana
+                            </p>
+                            
+                        </div>
+
+
+                        <button class="view-btn">
+                            View Details
+                        </button>
+
+                    </div>
+
+
+                    <!-- ================= COMPANY CARD 2 ================= -->
+
+                    <div class="company-card" data-company="infosys"
+                    data-package="4"  data-eligibility="6"
+                    >
+
+                        <div class="company-logo infosys-logo">
+                            INFY
+                        </div>
+
+
+                        <div class="company-info">
+
+                            <h2>
+                                Infosys Limited
+                            </h2>
+
+                            <p>
+                                Software Engineer
+                            </p>
+
+                            <p>
+                                <i class="fa-solid fa-location-dot"></i>
+                                Hyderabad, Telangana
+                            </p>
+
+                        </div class="comapany-card" >
+
+
+                        <button class="view-btn" >
+                            View Details
+                        </button>
+
+                    </div>
+
+
+                    <!-- ================= COMPANY CARD 3 ================= -->
+
+                    <div class="company-card" data-company="microsoft"
+                     data-package="10"  data-eligibility="7"
+                    >
+
+                        <div class="company-logo microsoft-logo">
+
+                            <span class="square red"></span>
+                            <span class="square green"></span>
+                            <span class="square blue"></span>
+                            <span class="square yellow"></span>
+
+                        </div>
+
+
+                        <div class="company-info" >
+
+                            <h2>
+                                Microsoft
+                            </h2>
+
+                            <p>
+                                Software Developer
+                            </p>
+
+                            <p>
+                                <i class="fa-solid fa-location-dot"></i>
+                                Hyderabad, Telangana
+                            </p>
+
+                        </div class="comapany-card">
+
+
+                        <button class="view-btn" >
+                            View Details
+                        </button>
+
+                    </div>
+
+
+                    <!-- ================= COMPANY CARD 4 ================= -->
+
+                    <div class="company-card" data-company="amazon"
+                     data-package="8"  data-eligibility="7"
+                    >
+
+                        <div class="company-logo amazon-logo">
+                            a
+                        </div>
+
+
+                        <div class="company-info">
+
+                            <h2>
+                                Amazon
+                            </h2>
+
+                            <p>
+                                Software Development Engineer
+                            </p>
+
+                            <p>
+                                <i class="fa-solid fa-location-dot"></i>
+                                Chennai, Telangana
+                            </p>
+
+                        </div class="comapany-card" >
+
+
+                        <button class="view-btn">
+                            View Details
+                        </button>
+
+                    </div>
+
+
+                </main>
+
+            </div>
+
+        </div>
+
+    </div>
+  <script src="companies.js"></script>
+</body>
+
+</html>
